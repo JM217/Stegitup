@@ -1,8 +1,5 @@
-# Steganography tool - Stegshitup
 # Final Year Project - Security - Bsc Computer Science with Cyber Security
 # Author - Joseph McLean
-# Start - 29/10/2021
-# End - xx/xx/2021
 # Description - This tool is to provide a way to both embed and extract text
 # from an image file
 
@@ -98,7 +95,7 @@ def extract():
     img.image = render
     img.place(x=20, y=50)
 
-    # Algorithm to extract and decode the data from the image
+    # Algorithm to extract the data from the image
     img = cv2.imread("./encoded_image.png")
     data = []
     stop = False
