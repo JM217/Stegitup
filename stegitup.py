@@ -1,5 +1,5 @@
 # Final Year Project - Security - Bsc Computer Science with Cyber Security
-# Author - Joseph McLean
+# Author - JM217
 # Description - This tool is to provide a way to both embed and extract text
 # from an image file
 
@@ -17,7 +17,6 @@ image_display_size = 300, 300
 
 
 def on_click():
-    # Step 1.5
     global path_image
     # use the tkinter filedialog library to open the file using a dialog box.
     # obtain the image of the path
@@ -36,7 +35,6 @@ def on_click():
 
 
 def encode_input_to_image():
-    # Step 2
     global path_image
     text = txt.get(1.0, "end-1c")
     data = hashlib.sha1(text.encode('utf-8'))
@@ -75,7 +73,6 @@ def encode_input_to_image():
                         img[i][count][2] -= 1
                     count += 1
         count = 0
-    # Step 6
     # Write the encoded image into a new file
     cv2.imwrite("./encoded_image.png", img)
     # Display the success label.
